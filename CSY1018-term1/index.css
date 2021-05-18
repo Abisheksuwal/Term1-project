@@ -1,0 +1,60 @@
+body{
+	margin: 0px;
+	background-color: #000000db;
+}
+
+nav{
+	background-color: #283b40;
+	margin:0px;
+	display: inline-flex;
+	width: 100%;
+}
+
+h4,h1{
+	font-family:Ink Free;
+	margin: 0px;
+	color: #947e7e;
+}
+
+.text{
+	text-decoration: none;
+	font-family: Lucida Sans;
+	color: black;
+}
+
+.option0{
+	margin: 10px;
+	padding: 5px;
+}
+
+.option1{
+	margin: 10px;
+	padding: 5px;
+}
+
+.option2{
+	margin: 10px;
+	padding: 5px;
+}
+
+.option3{
+	margin: 10px;
+	padding: 5px;
+}
+
+.option4{
+	margin: 10px;
+	padding: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+	nav{
+		flex-direction: column;
+	}
+}
+
+
