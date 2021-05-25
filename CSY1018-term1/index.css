@@ -61,7 +61,7 @@ p{
 .welcome{
 	margin-top: 8%;
 	display: inline-flex;
-	/*background-color: blue;*/
+/*	background-color: blue;*/
 }
 
 .introimg{
@@ -84,7 +84,7 @@ p{
 .image{
 	float: left;
 /*	margin-left: 25%;*/
-	/*background-color: green;*/
+/*	background-color: green;*/
 }
 
 .btn{
@@ -112,6 +112,7 @@ p{
 	height: 160px;
 	box-shadow: 0px 8px 13px 10px rgba(1,0,0,0.5);
 }
+
 
 
 /*CV starts here*/
@@ -142,11 +143,59 @@ p{
 	padding: 20px;
 }
 
+/*contact starts here*/
+.box2{
+	height: auto;
+	width: 80%;
+	background-color: #353835;
+	margin: auto;
+	margin-top: 9%;
+	padding: 15px;
+}
+
+.inputtext{
+	width: 350px;
+	height: 35px;
+	font-family: Ink Free;
+	font-size: 20px;
+	border-radius: 13px;
+	border-top: none;
+	margin: 8px;
+}
+
+textarea{
+	font-family: Ink Free;
+	font-size: 20px;
+	border-radius: 13px;
+	border-top: none;
+	margin: 8px;
+}
+
+.submit{
+	height: 30px;
+	width: 80px;
+	font-family: Ink Free;
+	font-size: 15px;
+	border-radius: 15px; 
+	margin: 4px;
+}
+
+.social{
+	height: 45px;
+	width: 70px;
+	margin-top: 15px;
+}
+
+.socialmedia{
+	text-align: center;
+}
+
 
 
 @media screen and (max-width: 600px){
 	nav{
-		flex-direction: column;
+		flex-direction: column; 
+		width: 100%;
 	}
 
 	/*responsive for home*/
@@ -174,6 +223,20 @@ p{
 		width: 96%;
 		margin-top: 2%;
 		height: 96%;
+	} 
+
+	/*contact*/
+	.box2{
+		width: 96%;
+		margin-top: 2%;
+	}
+
+	.inputtext{
+		width: 90%;
+	}
+
+	textarea{
+		width: 90%;
 	}
 
 }
