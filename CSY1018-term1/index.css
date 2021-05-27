@@ -10,7 +10,7 @@ nav{
 	width: 100%;
 }
 
-h4,h1,h3{
+h4,h1,h3,h2{
 	font-family:Ink Free;
 	margin: 0px;
 	color: #947e7e;
@@ -65,8 +65,8 @@ p{
 }
 
 .introimg{
-	height: 300px;
-	width: 300px;
+	height: 400px;
+	width: 400px;
 	border-radius: 50%;
 	box-shadow: 3px 8px 10px 3px rgba(1,0,0,0.5);
 }
@@ -93,6 +93,22 @@ p{
 	background-color: #70776f;
 	/*border: none;*/
 	box-shadow: 0px 4px 5px 0 rgba(1,0,0,0.5);
+}
+
+#value1{
+	width: 500px;
+	height: 15px;
+	margin: 20px;
+	transition:all .9s ease-in-out;
+
+}
+
+.Hobbies{
+	width: 30%;
+	margin: auto;
+	margin-top: 50px;
+	text-align: left;
+	padding: 10px;
 }
 
 /*portfolio starts here*/
@@ -142,6 +158,7 @@ p{
 .grid-item{
 	padding: 20px;
 }
+
 
 /*contact starts here*/
 .box2{
@@ -217,6 +234,14 @@ textarea{
 		width: 95%;
 	}
 
+	.Hobbies{
+		width: 90%;
+	}
+
+	#value1{
+		width: 90%;
+	}
+
 	/*CV*/
 
 	.box1{
@@ -227,7 +252,7 @@ textarea{
 
 	/*contact*/
 	.box2{
-		width: 96%;
+		width: 90%;
 		margin-top: 2%;
 	}
 
@@ -236,7 +261,7 @@ textarea{
 	}
 
 	textarea{
-		width: 90%;
+		width: 80%;
 	}
 
 }
