@@ -1,5 +1,6 @@
 body{
 	margin: 0px;
+	padding: 0px;
 	background-color: /*#464646*/ white;
 }
 
@@ -8,6 +9,11 @@ nav{
 	margin:0px;
 	display: inline-flex;
 	width: 100%;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	font-family: Lucida Sans;
+	font-size: 20px;
 }
 
 h4,h1,h3,h2{
@@ -20,7 +26,8 @@ p{
 	margin: 9px;
 	font-family: Ink Free;
 	font-size: 15px;
-	color: #c1baba;
+	color: #504747;
+	margin: 0px;
 }
 
 /*menu starts here*/
@@ -28,6 +35,7 @@ p{
 	text-decoration: none;
 	font-family: Lucida Sans;
 	color: #c1baba;
+	margin: 25px;
 }
 
 .option0{
@@ -55,13 +63,26 @@ p{
 	padding: 5px;
 }
 
+.burgericon{
+	float: right;
+}
+
+.line{
+	height: 5px;
+	width: 30px;
+	border-radius: 3px;
+	background-color: white;
+	margin: 5px;
+	display: none;
+}
+
+
 
 /*Home intro starts here*/
 
 .welcome{
 	margin-top: 8%;
 	display: inline-flex;
-/*	background-color: blue;*/
 }
 
 .introimg{
@@ -87,6 +108,11 @@ p{
 /*	background-color: green;*/
 }
 
+.selfintro{
+	padding: 15px;
+	font-size: 17px;
+}
+
 .btn{
 	height: 30px;
 	border-radius: 20px;
@@ -95,11 +121,11 @@ p{
 	box-shadow: 0px 4px 5px 0 rgba(1,0,0,0.5);
 }
 
-#value1{
+.value1{
 	width: 500px;
 	height: 15px;
-	margin: 20px;
-	transition:all .9s ease-in-out;
+	margin: 25px;
+	transition:all .7s ease-in-out;
 
 }
 
@@ -116,7 +142,7 @@ p{
 .port{
 	height: 150px;
 	width: 90%;
-	background-color: green;
+/*	background-color: green;*/
 	margin:auto;
 	margin-top: 30px;
 	transition:all .5s ease-in-out;
@@ -207,14 +233,36 @@ textarea{
 	text-align: center;
 }
 
+/*sitereport*/
+.report{
+	padding: 20px;
+	font-size: 19px;
+}
+
+.reporthead{
+	margin-top: 15px;
+}
+
 
 
 @media screen and (max-width: 600px){
 	nav{
 		flex-direction: column; 
 		width: 100%;
+		height: auto;
+		align-items: center;
 	}
 
+
+	.text{
+		overflow: hidden;
+		height: auto;
+
+	}
+
+	.line{
+		display: flex;
+	}
 	/*responsive for home*/
 
 	.introimg{
@@ -238,21 +286,21 @@ textarea{
 		width: 90%;
 	}
 
-	#value1{
+	.value1{
 		width: 90%;
 	}
 
 	/*CV*/
 
 	.box1{
-		width: 96%;
+		width: 94%;
 		margin-top: 2%;
 		height: 96%;
 	} 
 
 	/*contact*/
 	.box2{
-		width: 90%;
+		width: 92%;
 		margin-top: 2%;
 	}
 
