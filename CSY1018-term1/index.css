@@ -9,8 +9,7 @@ nav{
 	margin:0px;
 	display: inline-flex;
 	width: 100%;
-	height: 75px;
-	display: flex;
+	height: auto;
 	align-items: center;
 	font-family: Lucida Sans;
 	font-size: 20px;
@@ -35,7 +34,7 @@ p{
 	text-decoration: none;
 	font-family: Lucida Sans;
 	color: #c1baba;
-	margin: 25px;
+	margin: 7px;
 }
 
 .option0{
@@ -245,7 +244,7 @@ textarea{
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 	nav{
 		flex-direction: column; 
 		width: 100%;
@@ -314,4 +313,98 @@ textarea{
 
 }
 
+
+/*Css for nav*/
+.nav {
+  background-color: /*#283b40*/ black;
+  margin:0px;
+  display: inline-flex;
+  align-items: center;
+  font-family: Lucida Sans;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  position: relative;
+
+}
+
+.text{
+  text-decoration: none;
+  font-family: Lucida Sans;
+  color: #c1baba;
+  margin: 7px;
+}
+
+
+.burgericon {
+  display: none;
+}
+
+.options {
+  display: inline;
+  float: left;
+  font-size: 18px;
+}
+
+
+#nav-check {
+  display: none;
+}
+
+
+@media (max-width:600px) {
+.burgericon {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+
+label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+
+span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+
+.options {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+
+a {
+    display: block;
+    width: 100%;
+  }
+  
+#nav-check:not(:checked) ~ .options {
+    height: 0px;
+  }
+
+
+#nav-check:checked ~ .options {
+    height: calc(100vh - 10px);
+    overflow-y: auto;
+  }
+}
 
