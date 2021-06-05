@@ -1,11 +1,11 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: /*#464646*/ white;
+	background-color:white;
 }
 
 nav{
-	background-color: /*#283b40*/ black;
+	background-color:black;
 	margin:0px;
 	display: inline-flex;
 	width: 100%;
@@ -30,51 +30,41 @@ p{
 }
 
 /*menu starts here*/
+.nav {
+  background-color:black;
+  margin:0px;
+  display: inline-flex;
+  align-items: center;
+  font-family: Lucida Sans;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  position: relative;
+
+}
+
 .text{
-	text-decoration: none;
-	font-family: Lucida Sans;
-	color: #c1baba;
-	margin: 7px;
+  text-decoration: none;
+  font-family: Lucida Sans;
+  color: #c1baba;
+  margin: 7px;
 }
 
-.option0{
-	margin: 10px;
-	padding: 5px;
+
+.burgericon {
+  display: none;
 }
 
-.option1{
-	margin: 10px;
-	padding: 5px;
+.options {
+  display: inline;
+  float: left;
+  font-size: 18px;
 }
 
-.option2{
-	margin: 10px;
-	padding: 5px;
-}
 
-.option3{
-	margin: 10px;
-	padding: 5px;
+#nav-check {
+  display: none;
 }
-
-.option4{
-	margin: 10px;
-	padding: 5px;
-}
-
-.burgericon{
-	float: right;
-}
-
-.line{
-	height: 5px;
-	width: 30px;
-	border-radius: 3px;
-	background-color: white;
-	margin: 5px;
-	display: none;
-}
-
 
 
 /*Home intro starts here*/
@@ -95,7 +85,6 @@ p{
 .intro{
 	float: right;	
 	text-align: left;			
-/*	background-color: red;*/
 	height: 300px;
 	width: 400px;
 
@@ -103,8 +92,6 @@ p{
 
 .image{
 	float: left;
-/*	margin-left: 25%;*/
-/*	background-color: green;*/
 }
 
 .selfintro{
@@ -141,7 +128,6 @@ p{
 .port{
 	height: 150px;
 	width: 90%;
-/*	background-color: green;*/
 	margin:auto;
 	margin-top: 30px;
 	transition:all .5s ease-in-out;
@@ -228,6 +214,7 @@ textarea{
 	margin-top: 15px;
 }
 
+
 .socialmedia{
 	text-align: center;
 }
@@ -240,6 +227,21 @@ textarea{
 
 .reporthead{
 	margin-top: 15px;
+}
+
+/*sitereport starts here*/
+.grid-container1{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.grid-item1{
+	margin: 30px;
+}
+
+.validationimg{
+	width: 500px;
+	height: 300px;	
 }
 
 
@@ -292,15 +294,27 @@ textarea{
 	/*CV*/
 
 	.box1{
-		width: 94%;
-		margin-top: 2%;
-		height: 96%;
+		width: 90%;
+		margin: -4px;
+		height: 100%;
+		padding: 0px;
+		background-color: white;
+		display: block;
 	} 
+
+	.objectives{
+		padding: 10px;
+	}
+
 
 	/*contact*/
 	.box2{
-		width: 92%;
-		margin-top: 2%;
+		width: 95%;
+		margin-top: 10%;
+		height: 100%;
+		display: block;
+		background-color: white;
+		padding: 0px;
 	}
 
 	.inputtext{
@@ -311,46 +325,19 @@ textarea{
 		width: 80%;
 	}
 
-}
+	/*sitereport*/
+	.grid-container1{
+		grid-template-columns: 100%;
+	}
 
-
-/*Css for nav*/
-.nav {
-  background-color: /*#283b40*/ black;
-  margin:0px;
-  display: inline-flex;
-  align-items: center;
-  font-family: Lucida Sans;
-  font-size: 20px;
-  height: 50px;
-  width: 100%;
-  position: relative;
+	.validationimg{
+		width: 100%;
+		height: 250px;
+	}
 
 }
 
-.text{
-  text-decoration: none;
-  font-family: Lucida Sans;
-  color: #c1baba;
-  margin: 7px;
-}
-
-
-.burgericon {
-  display: none;
-}
-
-.options {
-  display: inline;
-  float: left;
-  font-size: 18px;
-}
-
-
-#nav-check {
-  display: none;
-}
-
+/*media query for navbar menu*/
 
 @media (max-width:600px) {
 .burgericon {
@@ -392,7 +379,7 @@ span {
   }
 
 
-a {
+.text {
     display: block;
     width: 100%;
   }
