@@ -21,6 +21,7 @@ h4,h1,h3,h2{
 	color: #947e7e;
 }
 
+
 p{
 	margin: 9px;
 	font-family: Ink Free;
@@ -29,7 +30,7 @@ p{
 	margin: 0px;
 }
 
-/*menu starts here*/
+/*----------menu starts here------------------*/
 .nav {
   background-color:black;
   margin:0px;
@@ -67,7 +68,7 @@ p{
 }
 
 
-/*Home intro starts here*/
+/*------------Home intro starts here-----------*/
 
 .welcome{
 	margin-top: 8%;
@@ -123,7 +124,7 @@ p{
 	padding: 10px;
 }
 
-/*portfolio starts here*/
+/*-------------portfolio starts here----------*/
 
 .port{
 	height: 150px;
@@ -155,10 +156,12 @@ p{
 
 .objectives{
 	text-align: left;
+	margin: 10px;
 }
 
 .education{
 	text-align: left;
+	margin: 10px;
 }
 
 .grid-container{
@@ -171,7 +174,7 @@ p{
 }
 
 
-/*contact starts here*/
+/*------contact starts here---------*/
 .box2{
 	height: auto;
 	width: 80%;
@@ -219,7 +222,7 @@ textarea{
 	text-align: center;
 }
 
-/*sitereport*/
+/*----------------sitereport starts here---------------*/
 .report{
 	padding: 20px;
 	font-size: 19px;
@@ -229,7 +232,6 @@ textarea{
 	margin-top: 15px;
 }
 
-/*sitereport starts here*/
 .grid-container1{
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
@@ -244,7 +246,26 @@ textarea{
 	height: 300px;	
 }
 
+.model{
+	display: inline-flex;
+}
 
+.boxmod{
+	width: 80%;
+}
+
+.boxmod2{
+	width: 18%;
+	margin: 10px;
+}
+
+.strtimg{
+	width: 300px;
+}
+
+
+
+/*-------codding for resposive design starts here--------*/
 
 @media screen and (max-width: 700px){
 	nav{
@@ -295,7 +316,7 @@ textarea{
 
 	.box1{
 		width: 90%;
-		margin: -4px;
+		margin: -3px;
 		height: 100%;
 		padding: 0px;
 		background-color: white;
@@ -326,6 +347,19 @@ textarea{
 	}
 
 	/*sitereport*/
+	.model{
+		flex-direction: column;
+	}
+
+	.boxmod{
+		width: 100%;
+	}
+
+	.boxmod2{
+		width: 200px;
+		margin: none;
+	}
+
 	.grid-container1{
 		grid-template-columns: 100%;
 	}
